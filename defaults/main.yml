@@ -8,6 +8,7 @@ zabbix_repo: zabbix
 zabbix_server_package_state: present
 zabbix_server_install_recommends: True
 zabbix_server_install_database_client: True
+zabbix_server_allow_restart: true
 
 zabbix_repo_yum:
   - name: zabbix

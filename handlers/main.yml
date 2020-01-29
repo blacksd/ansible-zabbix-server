@@ -4,3 +4,5 @@
 - name: zabbix-server restarted
   service: name=zabbix-server state=restarted enabled=yes
   tags: zabbix-server
+  when:
+  - zabbix_server_allow_restart | bool
